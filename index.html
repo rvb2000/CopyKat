@@ -181,10 +181,11 @@ app.stage.addChild(tileBoard);
 // tileBoard.addChild(greenTile);
 // tileBoard.addChild(blueTile);
 
- pinkTile= animations("pink", 155, 355);
- yellowTile= animations("yellow", w-155, 355);
- greenTile= animations("green", 155, h-130);
- blueTile= animations("blue", w-155, h-130);
+
+ pinkTile= animations("pink", 157, h-300);
+ yellowTile= animations("yellow", w-157, h-300);
+ greenTile= animations("green", 157, h-110);
+ blueTile= animations("blue", w-157, h-110);
  
 //  pinkTile.on('pointerdown', ()=>{pinkTile.gotoAndPlay(0); input(0)});
 //  yellowTile.on('pointerdown', ()=>{yellowTile.gotoAndPlay(0); input(1)});
@@ -196,10 +197,10 @@ yellowTile.on('pointerdown', ()=>{input(1)});
 greenTile.on('pointerdown', ()=>{input(2)});
 blueTile.on('pointerdown', ()=>{input(3)});
  
-correctPink=correctAnimation(155,355);
-correctYellow=correctAnimation(w-155,355);
-correctGreen=correctAnimation(155,h-130);
-correctBlue=correctAnimation(w-155,h-130);
+correctPink=correctAnimation(157, h-300);
+correctYellow=correctAnimation( w-157, h-300);
+correctGreen=correctAnimation(157, h-110);
+correctBlue=correctAnimation(w-157, h-110);
 
 tileBoard.addChild(pinkTile);
 tileBoard.addChild(yellowTile);
